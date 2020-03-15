@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/logo_description"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:src="@drawable/sapo_logo_noel"
+        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.example.hometestmobile.customView.CustomTextInputLayout
+            android:id="@+id/input_layout_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/rippleEffectColor"
+                android:hint="@string/hint_username"
+                android:singleLine="true"
+                android:textColorHint="@color/rippleEffectColor" />
+        </com.example.hometestmobile.customView.CustomTextInputLayout>
+
+        <com.example.hometestmobile.customView.CustomTextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/rippleEffectColor"
+                android:hint="@string/hint_email"
+                android:singleLine="true"
+                android:textColorHint="@color/rippleEffectColor" />
+        </com.example.hometestmobile.customView.CustomTextInputLayout>
+
+        <com.example.hometestmobile.customView.CustomTextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/rippleEffectColor"
+                android:hint="@string/hint_password"
+                android:singleLine="true"
+                android:textColorHint="@color/rippleEffectColor" />
+        </com.example.hometestmobile.customView.CustomTextInputLayout>
+
+        <com.example.hometestmobile.customView.CustomTextInputLayout
+            android:id="@+id/input_layout_repeat_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_repeat_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/rippleEffectColor"
+                android:hint="@string/hint_repeat_password"
+                android:singleLine="true"
+                android:textColorHint="@color/rippleEffectColor" />
+        </com.example.hometestmobile.customView.CustomTextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/ripple_button"
+        android:text="@string/button_next"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934"
+        tools:layout_editor_absoluteX="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
