@@ -18,9 +18,9 @@
     <string name="other">Khác</string>
     <string name="welcome">Chào mừng bạn\nđến với ứng dụng Sapo</string>
     <string name="msg_error_username">username > 8 ký tự</string>
-    <string name="msg_error_email">Chào mừng bạn\nđến với ứng dụng Sapo</string>
+    <string name="msg_error_email">Email không hợp lệ</string>
     <string name="msg_error_password">password > 8 ký tự. Có chữ hoa, chữ thường, và ký tự đặc biệt</string>
-    <string name="msg_error_repeat_password">password phải trùng với password</string>
+    <string name="msg_error_repeat_password">password repeat phải trùng với password</string>
     <string name="general_title_toolbar">Thông tin chung</string>
     <string name="general_description">Bạn đã chọn</string>
 
